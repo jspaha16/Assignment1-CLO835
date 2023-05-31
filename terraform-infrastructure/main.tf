@@ -106,3 +106,10 @@ resource "aws_security_group" "web_sg" {
   )
 }
 
+resource "aws_ecr_repository" "webserver_images" {
+  name = "webserver-images"
+}
+
+resource "aws_ecr_repository" "mysql_images" {
+  name = "mysql-images"
+}
